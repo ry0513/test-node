@@ -22,7 +22,7 @@ app.use((req, res) => {
 });
 
 if (require.main === module) {
-  app.listen(port, () => {
+  app.listen(port, "0.0.0.0", () => {
     console.log(`Express server listening on http://localhost:${port}`);
   });
 }
